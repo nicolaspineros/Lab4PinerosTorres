@@ -8,7 +8,7 @@ public class OriginalScore implements GameScore{
     @pos debe retornar la puntuacion con un valor >= 0
     @pos return=100-incorrectcount * 10
     */
-    public int calculateScore(int correctCount,int incorrectCount){
+    public int calculateScore(int correctCount,int incorrectCount){       
         return 0;
     }
 }

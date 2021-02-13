@@ -8,6 +8,7 @@ public class PowerScore implements GameScore{
     @pos return=(5^correctCount)-(incorrectCount*8)
     */
     public int calculateScore(int correctCount,int incorrectCount){
+        
         return 0;
     }
 }

@@ -9,6 +9,7 @@ public class BonusScore implements GameScore{
     @pos return=(correctCount*10)-(incorrectCount*5)
     */
     public int calculateScore(int correctCount,int incorrectCount){
+        
         return 0;
     }
 }
