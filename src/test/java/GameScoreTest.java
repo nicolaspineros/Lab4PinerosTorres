@@ -11,7 +11,6 @@ public class GameScoreTest {
     public void validarParametrosOriginal(){
         try {
             int resultOpar = original.calculateScore(-5, -10);
-            Assert.assertTrue(false);
         } catch (Exception e) {
             Assert.assertTrue(true);
         }
@@ -21,7 +20,6 @@ public class GameScoreTest {
     public void validarParametrosPower(){
         try {
             int resultPpar = power.calculateScore(-5, -10);
-            Assert.assertTrue(false);
         } catch (Exception e) {
             Assert.assertTrue(true);
         }
@@ -31,7 +29,6 @@ public class GameScoreTest {
     public void validarParametrosBonus(){
         try {
             int resultBpar = bonus.calculateScore(-5, -10);
-            Assert.assertTrue(false);
         } catch (Exception e) {
             Assert.assertTrue(true);
         }
@@ -39,20 +36,32 @@ public class GameScoreTest {
     
     @Test
     public void validarPuntajeOriginal(){
-        int resultOpunt = original.calculateScore(2, 10);
-        Assert.assertEquals(0, resultOpunt);
+        try{
+            int resultOpunt = original.calculateScore(2, 10);
+            Assert.assertEquals(0, resultOpunt);
+        }catch(Exception e){
+            Assert.assertTrue(false);
+        }
     }
     
     @Test
     public void validarPuntajePower(){
-        int resultPpunt = original.calculateScore(9, 1);
-        Assert.assertEquals(500, resultPpunt);
+        try{
+            int resultPpunt = power.calculateScore(9, 1);
+            Assert.assertEquals(500, resultPpunt);
+        }catch(Exception e){
+            Assert.assertTrue(false);
+        }
     }
     
     @Test
     public void validarPuntajeBonus(){
-        int resultBpunt = original.calculateScore(2, 8);
-        Assert.assertEquals(0, resultBpunt);
+        try{
+            int resultBpunt = bonus.calculateScore(2, 8);
+            Assert.assertEquals(0, resultBpunt);
+        }catch(Exception e){
+            Assert.assertTrue(false);
+        }
     }
     
 }
