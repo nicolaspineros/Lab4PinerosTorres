@@ -16,4 +16,5 @@ public class PowerScore implements GameScore{
         resultado = (resultado>500)?500:resultado;
         return resultado;
     }
+    public int reset(){return 0;}
 }

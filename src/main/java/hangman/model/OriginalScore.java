@@ -16,4 +16,6 @@ public class OriginalScore implements GameScore{
         resultado = (resultado<0)?0:resultado;
         return resultado;
     }
+
+    public int reset(){return 100;}
 }
